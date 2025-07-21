@@ -1,0 +1,12 @@
+/test
+/data
+/chinese_version/data
+/attachments
+
+
+*.build
+*.dist
+
+.*
+
+__*
