@@ -524,17 +524,17 @@ class App(ctk.CTk):
         file_selection_frame.grid(row=1, column=0, columnspan=6, padx=35, pady=10, sticky="ew")
 
         # 添加标签
-        label = ctk.CTkLabel(file_selection_frame, text="选择文件夹:", font=ctk.CTkFont(size=16), width=130)
+        label = ctk.CTkLabel(file_selection_frame, text="Select folder:", font=ctk.CTkFont(size=16), width=130)
         label.pack(side="left", padx=(10, 5), pady=10)
 
         # 添加文本框来显示文件路径
         self.file_path_var = StringVar(value=self.set_data["log_path"])
-        self.file_entry = ctk.CTkEntry(file_selection_frame, textvariable=self.file_path_var, placeholder_text="选择文件夹路径",
+        self.file_entry = ctk.CTkEntry(file_selection_frame, textvariable=self.file_path_var, placeholder_text="Select folder path",
                                        width=300)
         self.file_entry.pack(side="left", padx=5, pady=10)
 
         # 添加按钮来选择文件
-        self.select_folder_button = ctk.CTkButton(file_selection_frame, text="选择文件夹", command=self.select_file)
+        self.select_folder_button = ctk.CTkButton(file_selection_frame, text="Select folder", command=self.select_file)
         self.select_folder_button.pack(side="left", padx=10, pady=10)
 
         logging_information_frame = ctk.CTkFrame(self.current_frame)
